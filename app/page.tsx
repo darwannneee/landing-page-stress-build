@@ -14,11 +14,7 @@ export default function Home() {
 
   useEffect(() => {
     // Get target date from localStorage or set it to 30 days from now if not set
-    let targetDate = localStorage.getItem('targetDate');
-    if (!targetDate) {
-      targetDate = addDays(new Date(), 30).toISOString();
-      localStorage.setItem('targetDate', targetDate);
-    }
+    let targetDate = 1720063592000;
 
     const calculateTimeLeft = () => {
       const now = new Date();
